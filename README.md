@@ -29,5 +29,5 @@ A working example of this app is shown in this gif:
 * Why would **this** be undefined?
 * Did we import and export our components correctly?
 * Did we pass down the *props* that we need?
-* Do we need to *lift state*?
-* How do we **set state**?
+* How do we change state?
+* This app uses Semantic for styling - you will not need to worry about any errors here.
