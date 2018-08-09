@@ -16,7 +16,7 @@ class Form extends Component {
     ...DEFAULT_STATE
   }
 
-  handleSubmit = (event) => {
+  handleSubmit() {
     event.preventDefault()
     document.getElementById("order-form").reset()
     this.props.addOrder(this.state)
@@ -25,7 +25,7 @@ class Form extends Component {
     })
   }
 
-  handleChange = (event) => {
+  handleChange() {
     const itemType = event.target.name
     const item = event.target.value
 
@@ -46,13 +46,13 @@ class Form extends Component {
       <div className="ui raised container segment">
         <h1 className="ui block header">Order Form</h1>
         <form className="ui form" id="order-form" onSubmit={this.handleSubmit}>
-          <ProteinForm handleChange={this.handleChange} />
+          <ProteinForm handleOnChange={this.handleChange} />
 
-          <FillingForm handleChange={this.handleChange} />
+          <FillingForm handleOnChange={this.handleChange} />
 
-          <ToppingForm handleChange={this.handleChange} />
+          <ToppingForm handleOnChange={this.handleChange} />
 
-          <SideForm handleChange={this.handleChange} />
+          <SideForm handleOnChange={this.handleChange} />
 
           <br />
 

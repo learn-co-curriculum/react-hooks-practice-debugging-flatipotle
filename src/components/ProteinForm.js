@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProteinForm = (props) => {
+const ProteinForm = () => {
   return (
     <div>
       <h1><label htmlFor="protein">Protein</label></h1>
