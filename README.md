@@ -10,11 +10,6 @@ Flatiron School has decided to dabble in the food industry and just opened up a 
 
 ## Deliverables
 
-A working example of this app is shown in this gif:
-
-![Jest watch mode](./public/example.gif)
-
-
 1. A user should be able to see an order form with options for protein, fillings, toppings, and sides.
 2. A user should be able to select as many proteins, fillings, toppings, and sides as they desire.
 3. A user should be able to submit the form with their selections and see their order(s) listed under "All Orders."
@@ -31,3 +26,5 @@ A working example of this app is shown in this gif:
 * Did we pass down the *props* that we need?
 * How do we change state?
 * This app uses Semantic for styling - you will not need to worry about any errors here.
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/Flatipotle-Debugging-Lab'>Flatipotle Debugging Lab</a> on Learn.co and start learning to code for free.</p>
