@@ -20,6 +20,7 @@ class Form extends Component {
     event.preventDefault()
     document.getElementById("order-form").reset()
     this.props.addOrder(this.state)
+
     this.setState({
       ...DEFAULT_STATE
     })
@@ -45,14 +46,26 @@ class Form extends Component {
     return(
       <div className="ui raised container segment">
         <h1 className="ui block header">Order Form</h1>
-        <form className="ui form" id="order-form" onSubmit={this.handleSubmit}>
-          <ProteinForm handleOnChange={this.handleChange} />
+        <form className="ui form" id="order-form" onSubmit={ this.handleSubmit }>
+          <ProteinForm
+            protein={ this.state.protein }
+            handleOnChange={ this.handleChange }
+          />
 
-          <FillingForm handleOnChange={this.handleChange} />
+          <FillingForm
+            fillings={ this.state.fillings }
+            handleOnChange={ this.handleChange }
+          />
 
-          <ToppingForm handleOnChange={this.handleChange} />
+          <ToppingForm
+            toppings={ this.state.toppings }
+            handleOnChange={ this.handleChange }
+          />
 
-          <SideForm handleOnChange={this.handleChange} />
+          <SideForm
+            sides={ this.state.sides }
+            handleOnChange={ this.handleChange }
+          />
 
           <br />
 

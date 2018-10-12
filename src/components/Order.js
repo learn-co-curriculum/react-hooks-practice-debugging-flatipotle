@@ -13,7 +13,7 @@ class Order extends Component {
     return (
       <div className="ui centered raised card">
         <div className="image">
-          <img src={require("../images/burrito-bowl.jpg")} alt="burrito bowl" />
+          <img src={ require("../images/burrito-bowl.jpg") } alt="burrito bowl" />
         </div>
         <div className="content">
           <b>Protein:</b><br />
@@ -28,7 +28,9 @@ class Order extends Component {
         </div>
         <div className="extra content">
           { this.props.sides.length > 0 ?
-              <button className="ui button small" onClick={this.handleClick}>View Sides</button>
+              <button className="ui button small" onClick={ this.handleClick }>
+                View Sides
+              </button>
             :
               <p>No sides</p>
           }

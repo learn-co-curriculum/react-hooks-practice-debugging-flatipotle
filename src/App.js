@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={require('./images/logo.png')} className="App-logo" alt="logo" />
+          <img src={ require('./images/logo.png') } className="App-logo" alt="logo" />
         </header>
 
         <Form />
