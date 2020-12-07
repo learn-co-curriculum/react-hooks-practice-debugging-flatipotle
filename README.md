@@ -31,8 +31,8 @@ broken. It's now your job to try to find all the bugs and fix the app!
 - **Read** the errors you receive in your browser and console
 - `console.log`, `debugger`, and **React Dev Tools** are your friends
 - Did we _return_ the values we want?
-- Why would **this** be undefined?
 - Did we import and export our components correctly?
 - Did we pass down the _props_ that we need?
+- Are our functions defined with the correct parameters?
 - How do we change state?
 - This app uses Semantic for styling - you will not need to worry about any errors here.

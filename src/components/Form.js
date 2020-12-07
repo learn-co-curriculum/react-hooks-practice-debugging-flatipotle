@@ -16,7 +16,7 @@ function Form() {
 
   function handleSubmit() {
     event.preventDefault();
-    props.addOrder(state);
+    props.addOrder(formState);
 
     setFormState({
       ...DEFAULT_STATE,
@@ -30,10 +30,12 @@ function Form() {
 
     if (formState[itemType].includes(item)) {
       setFormState({
+        ...formState,
         [itemType]: formState[itemType].filter((ingr) => ingr !== item),
       });
     } else {
       setFormState({
+        ...formState,
         [itemType]: formState[itemType].concat(item),
       });
     }
