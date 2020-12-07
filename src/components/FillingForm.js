@@ -1,9 +1,16 @@
-import React, { Fragment } from 'react'
+import React from "react";
+import blackBeans from "../images/fillings/black-beans.png";
+import brownRice from "../images/fillings/brown-rice.png";
+import fajitaVeg from "../images/fillings/fajita-veggies.png";
+import pintoBeans from "../images/fillings/pinto-beans.png";
+import whiteRice from "../images/fillings/white-rice.png";
 
-const FillingForm = (props) => {
+function FillingForm(props) {
   return (
-    <Fragment>
-      <h1><label htmlFor="fillings">Fillings</label></h1>
+    <>
+      <h1>
+        <label htmlFor="fillings">Fillings</label>
+      </h1>
       <div className="inline fields ui centered grid">
         <div className="field">
           <div className="ui checkbox">
@@ -12,10 +19,15 @@ const FillingForm = (props) => {
               type="checkbox"
               value="White Rice"
               name="fillings"
-              checked={ this.props.fillings.includes('White Rice') }
-              onChange={ this.props.handleChange }
+              checked={props.fillings.includes("White Rice")}
+              onChange={props.handleChange}
             />
-            <img src={ require('../images/fillings/white-rice.png') } height="100px" width="100px" alt="white rice" />
+            <img
+              src={whiteRice}
+              height="100px"
+              width="100px"
+              alt="white rice"
+            />
             <label htmlFor="white-rice">White Rice</label>
           </div>
         </div>
@@ -27,10 +39,15 @@ const FillingForm = (props) => {
               type="checkbox"
               value="Brown Rice"
               name="fillings"
-              checked={ this.props.fillings.includes('Brown Rice') }
-              onChange={ this.props.handleChange }
+              checked={props.fillings.includes("Brown Rice")}
+              onChange={props.handleChange}
             />
-            <img src={ require('../images/fillings/brown-rice.png') } height="100px" width="100px" alt="brown rice" />
+            <img
+              src={brownRice}
+              height="100px"
+              width="100px"
+              alt="brown rice"
+            />
             <label htmlFor="brown-rice">Brown Rice</label>
           </div>
         </div>
@@ -42,10 +59,15 @@ const FillingForm = (props) => {
               type="checkbox"
               value="Black Beans"
               name="fillings"
-              checked={ this.props.fillings.includes('Black Beans') }
-              onChange={ this.props.handleChange }
+              checked={props.fillings.includes("Black Beans")}
+              onChange={props.handleChange}
             />
-            <img src={ require('../images/fillings/black-beans.png') } height="100px" width="100px" alt="black beans" />
+            <img
+              src={blackBeans}
+              height="100px"
+              width="100px"
+              alt="black beans"
+            />
             <label htmlFor="black-beans">Black Beans</label>
           </div>
         </div>
@@ -57,10 +79,15 @@ const FillingForm = (props) => {
               type="checkbox"
               value="Pinto Beans"
               name="fillings"
-              checked={ this.props.fillings.includes('Pinto Beans') }
-              onChange={ this.props.handleChange }
+              checked={props.fillings.includes("Pinto Beans")}
+              onChange={props.handleChange}
             />
-            <img src={ require('../images/fillings/pinto-beans.png') } height="100px" width="100px" alt="pinto beans" />
+            <img
+              src={pintoBeans}
+              height="100px"
+              width="100px"
+              alt="pinto beans"
+            />
             <label htmlFor="pinto">Pinto Beans</label>
           </div>
         </div>
@@ -72,16 +99,21 @@ const FillingForm = (props) => {
               type="checkbox"
               value="Fajita Veggies"
               name="fillings"
-              checked={ this.props.fillings.includes('Fajita Veggies') }
-              onChange={ this.props.handleChange }
+              checked={props.fillings.includes("Fajita Veggies")}
+              onChange={props.handleChange}
             />
-            <img src={ require('../images/fillings/fajita-veggies.png') } height="100px" width="100px" alt="fajita veggies" />
+            <img
+              src={fajitaVeg}
+              height="100px"
+              width="100px"
+              alt="fajita veggies"
+            />
             <label htmlFor="veg">Fajita Veggies</label>
           </div>
         </div>
       </div>
-    </Fragment>
-  )
+    </>
+  );
 }
 
-export default FillingForm
+export default FillingForm;
