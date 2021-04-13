@@ -1,13 +1,7 @@
 ---
 :lessons:
-<<<<<<< HEAD
 - :id: 68066
   :course_id: 3264
   :canvas_url: https://learning.flatironschool.com/courses/3264/assignments/68066
-=======
-- :id: 68068
-  :course_id: 3264
-  :canvas_url: https://learning.flatironschool.com/courses/3264/assignments/68068
->>>>>>> master
   :type: assignment
     
