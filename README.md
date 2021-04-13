@@ -35,4 +35,5 @@ broken. It's now your job to try to find all the bugs and fix the app!
 - Did we pass down the _props_ that we need?
 - Are our functions defined with the correct parameters?
 - How do we change state?
-- This app uses Semantic for styling - you will not need to worry about any errors here.
+- This app uses Semantic for styling - you will not need to worry about any
+  errors here.
