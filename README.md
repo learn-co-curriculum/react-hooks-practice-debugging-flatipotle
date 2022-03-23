@@ -1,4 +1,4 @@
-# [Optional] Debugging Practice: Flatipotle
+# Debugging Practice: Flatipotle
 
 Flatiron School has decided to dabble in the food industry and just opened up a
 brand new fast casual Mexican restaurant (not at all a clone of a certain
