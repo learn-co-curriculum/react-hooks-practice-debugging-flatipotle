@@ -10,7 +10,8 @@
     "semantic-ui-react": "^2.0.1"
   },
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "test": "jest"
   },
   "eslintConfig": {
     "extends": [
