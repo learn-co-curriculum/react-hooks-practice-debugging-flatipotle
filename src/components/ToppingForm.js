@@ -23,7 +23,7 @@ function ToppingForm(props) {
               value="Mild Hot Sauce"
               name="toppings"
               checked={props.toppings.includes("Mild Hot Sauce")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img src={mild} height="100px" width="100px" alt="mild hot sauce" />
             <label htmlFor="mild">Mild Hot Sauce</label>
@@ -38,7 +38,7 @@ function ToppingForm(props) {
               value="Medium Hot Sauce"
               name="toppings"
               checked={props.toppings.includes("Medium Hot Sauce")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img
               src={medium}
@@ -58,7 +58,7 @@ function ToppingForm(props) {
               value="HOT Hot Sauce"
               name="toppings"
               checked={props.toppings.includes("HOT Hot Sauce")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img src={hot} height="100px" width="100px" alt="hot sauce" />
             <label htmlFor="hot">HOT Hot Sauce</label>
@@ -73,7 +73,7 @@ function ToppingForm(props) {
               value="Corn Salsa"
               name="toppings"
               checked={props.toppings.includes("Corn Salsa")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img
               src={cornSalsa}
@@ -93,7 +93,7 @@ function ToppingForm(props) {
               value="Sour Cream"
               name="toppings"
               checked={props.toppings.includes("Sour Cream")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img
               src={sourCream}
@@ -113,7 +113,7 @@ function ToppingForm(props) {
               value="Lettuce"
               name="toppings"
               checked={props.toppings.includes("Lettuce")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img src={lettuce} height="100px" width="100px" alt="lettuce" />
             <label htmlFor="lettuce">Lettuce</label>
@@ -128,7 +128,7 @@ function ToppingForm(props) {
               value="Guac"
               name="toppings"
               checked={props.toppings.includes("Guac")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img src={guac} height="100px" width="100px" alt="guacamole" />
             <label htmlFor="guac">Guac</label>
@@ -143,7 +143,7 @@ function ToppingForm(props) {
               value="Cheese"
               name="toppings"
               checked={props.toppings.includes("Cheese")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img src={cheese} height="100px" width="100px" alt="cheese" />
             <label htmlFor="cheese">Cheese</label>
