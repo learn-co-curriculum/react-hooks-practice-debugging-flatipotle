@@ -22,7 +22,7 @@ function SideForm(props) {
               value="Chips"
               name="sides"
               checked={props.sides.includes("Chips")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img src={chips} height="100px" width="100px" alt="chips" />
             <label htmlFor="chips">Chips</label>
@@ -37,7 +37,7 @@ function SideForm(props) {
               value="Chips & Salsa"
               name="sides"
               checked={props.sides.includes("Chips & Salsa")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img
               src={chipssalsa}
@@ -57,7 +57,7 @@ function SideForm(props) {
               value="Chips & Guac"
               name="sides"
               checked={props.sides.includes("Chips & Guac")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img
               src={chipsGuac}
@@ -77,7 +77,7 @@ function SideForm(props) {
               value="Chips & Queso"
               name="sides"
               checked={props.sides.includes("Chips & Queso")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img
               src={chipsQueso}
@@ -97,7 +97,7 @@ function SideForm(props) {
               value="Tortilla"
               name="sides"
               checked={props.sides.includes("Tortilla")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img src={tortilla} height="100px" width="100px" alt="tortilla" />
             <label htmlFor="tortila">Tortilla</label>
@@ -112,7 +112,7 @@ function SideForm(props) {
               value="Taco"
               name="sides"
               checked={props.sides.includes("Taco")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img src={taco} height="100px" width="100px" alt="taco" />
             <label htmlFor="taco">Taco</label>
@@ -127,7 +127,7 @@ function SideForm(props) {
               value="Fountain Drink"
               name="sides"
               checked={props.sides.includes("Fountain Drink")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img
               src={drink}
@@ -142,3 +142,4 @@ function SideForm(props) {
     </>
   );
 }
+export default SideForm;

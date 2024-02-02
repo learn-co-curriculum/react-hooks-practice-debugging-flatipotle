@@ -20,7 +20,7 @@ function FillingForm(props) {
               value="White Rice"
               name="fillings"
               checked={props.fillings.includes("White Rice")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img
               src={whiteRice}
@@ -40,7 +40,7 @@ function FillingForm(props) {
               value="Brown Rice"
               name="fillings"
               checked={props.fillings.includes("Brown Rice")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img
               src={brownRice}
@@ -60,7 +60,7 @@ function FillingForm(props) {
               value="Black Beans"
               name="fillings"
               checked={props.fillings.includes("Black Beans")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img
               src={blackBeans}
@@ -80,7 +80,7 @@ function FillingForm(props) {
               value="Pinto Beans"
               name="fillings"
               checked={props.fillings.includes("Pinto Beans")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img
               src={pintoBeans}
@@ -100,7 +100,7 @@ function FillingForm(props) {
               value="Fajita Veggies"
               name="fillings"
               checked={props.fillings.includes("Fajita Veggies")}
-              onChange={props.handleChange}
+              onChange={props.handleOnChange}
             />
             <img
               src={fajitaVeg}
