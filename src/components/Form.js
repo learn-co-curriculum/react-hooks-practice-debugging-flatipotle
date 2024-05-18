@@ -11,12 +11,12 @@ const DEFAULT_STATE = {
   sides: [],
 };
 
-function Form() {
+function Form({ addOrder }) {
   const [formState, setFormState] = useState(DEFAULT_STATE);
 
-  function handleSubmit() {
+  function handleSubmit(event) {
     event.preventDefault();
-    props.addOrder(formState);
+    addOrder(formState);
 
     setFormState({
       ...DEFAULT_STATE,
@@ -24,10 +24,7 @@ function Form() {
     event.target.reset();
   }
 
-  function handleChange() {
-    const itemType = event.target.name;
-    const item = event.target.value;
-
+  function handleChange(itemType, item) {
     if (formState[itemType].includes(item)) {
       setFormState({
         ...formState,
@@ -36,10 +33,12 @@ function Form() {
     } else {
       setFormState({
         ...formState,
-        [itemType]: formState[itemType].concat(item),
+        [itemType]:[...formState[itemType], item],
       });
     }
   }
+
+  // console.log("FormState:", formState)
 
   return (
     <div className="ui raised container segment">
@@ -47,20 +46,23 @@ function Form() {
       <form className="ui form" id="order-form" onSubmit={handleSubmit}>
         <ProteinForm
           protein={formState.protein}
-          handleOnChange={handleChange}
+          onChangeClick={handleChange}
         />
 
         <FillingForm
           fillings={formState.fillings}
-          handleOnChange={handleChange}
+          onChangeClick={handleChange}
         />
 
         <ToppingForm
           toppings={formState.toppings}
-          handleOnChange={handleChange}
+          onChangeClick={handleChange}
         />
 
-        <SideForm sides={formState.sides} handleOnChange={handleChange} />
+        <SideForm 
+          sides={formState.sides} 
+          onChangeClick={handleChange}
+        />
 
         <br />
 
