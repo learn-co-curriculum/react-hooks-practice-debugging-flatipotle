@@ -1,4 +1,3 @@
-import React from "react";
 import barbacoa from "../images/protein/barbacoa.png";
 import carnitas from "../images/protein/steak.png";
 import chicken from "../images/protein/chicken.png";
